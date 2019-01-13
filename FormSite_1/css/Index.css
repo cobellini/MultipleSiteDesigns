@@ -1,12 +1,22 @@
+*{
+    box-sizing: border-box;
+}
 html, body{
     padding: 0;
     margin: 0;
     height: 100%;
+   
 }
 
 body{
     height: 100%;
-    background-color: #EBD8D0
+    background-color: #4F8DBC;
+    
+}
+
+p{
+    font-family: 'Raleway', sans-serif;
+    color: #F9F9F9;
 }
 
 
@@ -16,24 +26,34 @@ body{
     height: 100%;
     margin-left: 5%;
     margin-right: 5%;
-    background-color: #e5d3cc;
+    background-color: #5C92BC;
     white-space: nowrap;
 }
 
 header{
-    height: 20%;
-   
+    height: 20%;   
 }
 
 header #header-image{
     height: 85%;
     width: 20%;
     display: block;  
+    margin: 0px auto;
 }
 
+
+
 header #header-text h1{
-    margin: 0;  
-    
+    margin: 0px; 
+    text-align: center; 
+    font-family: 'Raleway', sans-serif;
+    color: #F9F9F9;
+    font-size: 35px;
+}
+
+#mainContent{
+    padding-top: 2%;
+   
 }
 
 /* Left side styling(bullet list) */
@@ -43,6 +63,7 @@ header #header-text h1{
    display:inline-block;
    white-space: normal;
    vertical-align: top;
+  
 }
 
 
@@ -61,24 +82,29 @@ header #header-text h1{
 /* Right side styling (input form) */
 
 #rightList{
-    width: 50%;
+    width: 30%;
     display:inline-block;
     white-space: normal;
     vertical-align: top;
+    padding-top: 10%;
+    margin-left: 150px;
 }
 
+#registerForm{
+    padding: 25px;
+    border: 10px solid #F9F9F9;
+    border-radius: 15px;
+}
 
 
 
 
 /* footer styling */
 
-footer{
-  
-    height: 25%;
-    background-color: #e5d3cc;   
-    margin-left: 5%;
-    margin-right: 5%;
+footer{ 
+    height: 15%;
+    background-color: #5C92BC;     
+    
 }
 
 footer p{
