@@ -4,14 +4,13 @@
 html, body{
     padding: 0;
     margin: 0;
-    height: 100%;
+   
    
 }
 
 body{
     height: 100%;
-    background-color: #4F8DBC;
-    
+    background-color: #4F8DBC;  
 }
 
 p{
@@ -19,19 +18,17 @@ p{
     color: #F9F9F9;
 }
 
-
-
 /* Header styling */
 #container{ 
     height: 100%;
-    margin-left: 5%;
-    margin-right: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
     background-color: #5C92BC;
     white-space: nowrap;
 }
 
 header{
-    height: 20%;   
+    margin: 0px auto;
 }
 
 header #header-image{
@@ -41,69 +38,84 @@ header #header-image{
     margin: 0px auto;
 }
 
-
-
 header #header-text h1{
-    margin: 0px; 
+    margin: 0px auto; 
     text-align: center; 
     font-family: 'Raleway', sans-serif;
     color: #F9F9F9;
-    font-size: 35px;
+    font-size: 2.188em;
+    line-height: 2em;
+    border-bottom: 1px solid #F9F9F9;
+    text-shadow: 0.5px 1px #F9F9F9;
+    letter-spacing: 2px;
+    width: 80%;
 }
 
 #mainContent{
     padding-top: 2%;
-   
+    margin-top: 2%;  
+}
+
+.listContainers{
+    margin-top: 2%;
+    padding-left: 1%;
 }
 
 /* Left side styling(bullet list) */
-
 #leftList{ 
    width: 50%;
    display:inline-block;
    white-space: normal;
-   vertical-align: top;
-  
+   vertical-align: top; 
 }
 
+.LeftPointTitles{
+    font-family: 'Raleway', sans-serif;
+    font-size: 1.8em;
+}
 
 .leftBulletImages{
     height: 5%;
     width: 5%;
+    margin-right: 10px;
+    float: left;
 }
 
 .leftPoints{
     list-style-type: none;
     padding: 25px;
-    margin: 0;
-    
+    margin: 0;   
 }
 
 /* Right side styling (input form) */
-
 #rightList{
-    width: 30%;
+    width: 50%;
     display:inline-block;
     white-space: normal;
     vertical-align: top;
-    padding-top: 10%;
-    margin-left: 150px;
+    padding: 2% 7% 10% 5%;
+    position: relative;
+    
 }
 
 #registerForm{
-    padding: 25px;
+    max-width: 100%;
+    width: 100%;
     border: 10px solid #F9F9F9;
     border-radius: 15px;
+    padding: 5%;
+    height: 500px;  
 }
 
-
-
+.registerInputFields{
+   
+}
 
 /* footer styling */
-
 footer{ 
-    height: 15%;
-    background-color: #5C92BC;     
+    max-height: 15%;
+    background-color: #5C92BC;
+    padding-left: 3%;     
     
 }
 
