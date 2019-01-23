@@ -1,14 +1,18 @@
 *{
     box-sizing: border-box;
 }
+
+html{
+    height: 100%;
+}
+
 html, body{
     padding: 0;
     margin: 0;
  
 }
 
-body{
-   
+body{  
     background-color: #4F8DBC;  
 }
 
@@ -146,6 +150,14 @@ header #header-text h1{
     padding: 0;
     margin: 0;
     transform:translateX(25%);
+    margin-top: 25px;
+}
+
+#formHead p{
+    padding:0;
+    margin:0;
+    
+    padding: 25px;
 }
 
 .registerInputFields{
@@ -153,30 +165,62 @@ header #header-text h1{
    width: 90%;
    background-color: #5C92BC;
    border-color:  #5C92BC;
-   border: none;
-   
+   border: none; 
    border-bottom: 1px solid #F9F9F9;
    display: block;
    margin: 0 auto;
-
    position:relative;
    z-index:1;
-  
   padding-left:20px;
   font-family: 'Raleway', sans-serif;
   text-transform:uppercase;
   color: #F9F9F9;
-  
   -webkit-transition:.5s;
   transition:.5s;
   
+  
 }
+
+#submitContainer{
+    width: 100%;
+    white-space: nowrap;
+    vertical-align: top;
+    transform:translateX(5%);
+    padding-top: 15px;
+}
+
+
+
+.formbutton{
+    width: 45%;
+    cursor:pointer;
+    display: inline-block;
+    
+    border: 1px solid #4F8DBC;
+    height: 40px;
+    transition: .5s;
+    
+}
+
+.formbutton button{
+    margin:0;
+    padding:0;
+}
+
+
 
 .registerInputFields:focus{
     outline: none;
 }
 
 .registerInputFields:focus::placeholder{
+    outline:none;
+    position:relative;
+    -webkit-transform:translateY(-40px);
+    transform:translateY(-40px);
+}
+
+.registerInputFields:hover::placeholder{
     outline:none;
     position:relative;
     -webkit-transform:translateY(-40px);
@@ -194,9 +238,14 @@ header #header-text h1{
 
 .FormLabels{
     font-family: 'Raleway', sans-serif;
-    color: #F9F9F9;    
-    padding: 5px;
+    color: #F9F9F9;        
 }
+
+#formFooter{
+    font-size: 0.6rem;
+    padding-top: 10px;
+}
+
 
 /* footer styling */
 footer{ 
