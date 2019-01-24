@@ -1,15 +1,12 @@
+
 *{
     box-sizing: border-box;
 }
 
-html{
-    height: 100%;
-}
 
 html, body{
     padding: 0;
     margin: 0;
- 
 }
 
 body{  
@@ -189,8 +186,6 @@ header #header-text h1{
     padding-top: 15px;
 }
 
-
-
 .formbutton{
     width: 45%;
     cursor:pointer;
@@ -199,15 +194,16 @@ header #header-text h1{
     border: 1px solid #4F8DBC;
     height: 40px;
     transition: .5s;
+    background-color: #f9f9f9;
+    color: black;
+  
     
 }
 
-.formbutton button{
-    margin:0;
-    padding:0;
+.formbutton:hover{
+    background-color: #4F8DBC;
+    color: #F9F9F9;
 }
-
-
 
 .registerInputFields:focus{
     outline: none;
@@ -258,4 +254,270 @@ footer{
 footer p{
     margin: 0;
     padding: 0;
+}
+
+
+/* Responsive resizing */
+@media (max-width:480px){
+    *{
+        box-sizing: border-box;
+    }
+
+    html, body{
+        padding: 0;
+        margin: 0;    
+    }
+    
+    body{  
+        background-color: #4F8DBC;  
+    }
+    
+    p{
+        font-family: 'Raleway', sans-serif;
+        color: #F9F9F9;
+    }
+    
+    /* Header styling */
+    #container{ 
+        height: 100%;
+        margin-left: 0%;
+        margin-right: 0%;
+        background-color: #5C92BC;
+        white-space: nowrap;
+        width: 100%;
+    }
+    
+    header{
+        margin: 0px auto;
+        background-color: #5C92BC;
+        width: 100%;
+    }
+    
+    #header-text{
+        padding: 0px 10px;
+    }
+    
+    header #header-image{
+        height: 85%;
+        width: 20%;
+        display: block;  
+        margin: 0px auto;
+    }
+    
+    header #header-text h1{
+        margin: 0px auto; 
+        text-align: center; 
+        font-family: 'Raleway', sans-serif;
+        color: #F9F9F9;
+        font-size: 1.5em;
+        line-height: 2em;
+        border-bottom: 1px solid #F9F9F9;
+        text-shadow: 0.5px 1px black;
+        letter-spacing: 1px;
+        width: 100%;
+        padding: 0px 10px;
+
+      
+    }
+    
+    #mainContent{
+        padding-top: 2%;
+        margin-top: 2%;  
+        background-color: #5C92BC;
+        min-height: 80%;
+    }
+    
+    .listContainers{
+        margin-top: 2%;
+        padding-left: 1%;
+    }
+    
+    /* Left side styling(bullet list) */
+    #leftList{ 
+       width: 100%;
+       display:block;
+       white-space: normal;
+     
+       padding: 2% 7% 10% 5%;
+       position: relative;
+       margin-top: 0;
+       min-height: 100%;
+    }
+    
+    #LeftMainTitle{
+        text-align: center;
+        font-size: 2.3em;
+        border-bottom: 1px solid #F9F9F9;
+        
+    }
+    
+    .LeftPointTitles{
+        font-family: 'Raleway', sans-serif;
+        font-size: 1.8em;
+        color: #F9F9F9;
+        text-shadow: 0.5px 1px black;
+        line-height: 1.5em;
+        margin: 0;
+    }
+    
+    .leftBulletImages{
+        height: 10%;
+        width: 10%;
+        margin-right: 12px;
+        float: left;
+    }
+    
+    .leftPoints{
+        list-style-type: none;   
+        margin: 0;      
+        border-bottom: 1px solid #F9F9F9;
+        min-height: 100%;   
+        padding-left: 0;
+        padding-right: 0;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 10% 5% 10% 5%;
+    }
+    
+    .LeftListInnerParagraph{
+        padding-right: 5px;
+    }
+    
+    /* Right side styling (input form) */
+    #rightList{
+        width: 100%;
+        display:block;
+        white-space: normal;
+       
+        padding: 10% 7% 10% 5%;
+        position: relative;
+        
+    }
+    
+    #registerForm{
+        max-width: 100%;
+        width: 100%;
+        border: 10px solid #F9F9F9;
+        border-radius: 15px;
+        padding: 5%;
+        min-height: 500px;  
+        font-family: 'Raleway', sans-serif;
+    }
+    
+    
+    #formHead h3{
+        font-size: 1.8em;
+        color: #F9F9F9;
+        text-shadow: 0.5px 1px black;
+        padding: 0;
+        margin: 0;
+        transform:translateX(0%);
+        margin-top: 25px;
+    }
+    
+    #formHead p{
+        padding:0;
+        margin:0;
+        
+        padding: 25px;
+    }
+    
+    .registerInputFields{
+       height: 50px;
+       width: 90%;
+       background-color: #5C92BC;
+       border-color:  #5C92BC;
+       border: none; 
+       border-bottom: 1px solid #F9F9F9;
+       display: block;
+       margin: 0 auto;
+       position:relative;
+       z-index:1;
+      padding-left:20px;
+      font-family: 'Raleway', sans-serif;
+      text-transform:uppercase;
+      color: #F9F9F9;
+      -webkit-transition:.5s;
+      transition:.5s;
+      
+      
+    }
+    
+    #submitContainer{
+        width: 100%;
+        white-space: nowrap;
+        vertical-align: top;
+        transform:translateX(5%);
+        padding-top: 15px;
+    }
+    
+    .formbutton{
+        width: 45%;
+        cursor:pointer;
+        display: inline-block;
+        
+        border: 1px solid #4F8DBC;
+        height: 40px;
+        transition: .5s;
+        background-color: #f9f9f9;
+        color: black;
+      
+        
+    }
+    
+    .formbutton:hover{
+        background-color: #4F8DBC;
+        color: #F9F9F9;
+    }
+    
+    .registerInputFields:focus{
+        outline: none;
+    }
+    
+    .registerInputFields:focus::placeholder{
+        outline:none;
+        position:relative;
+        -webkit-transform:translateY(-40px);
+        transform:translateY(-40px);
+    }
+    
+    .registerInputFields:hover::placeholder{
+        outline:none;
+        position:relative;
+        -webkit-transform:translateY(-40px);
+        transform:translateY(-40px);
+    }
+    
+    .registerInputFields::placeholder{
+        color: #f9f9f9;
+        -webkit-transform:translateY(0px);
+        transform:translateY(0px);
+        -webkit-transition:.5s;
+        transition:.5s;
+    }
+    
+    
+    .FormLabels{
+        font-family: 'Raleway', sans-serif;
+        color: #F9F9F9;        
+    }
+    
+    #formFooter{
+        font-size: 0.6rem;
+        padding-top: 10px;
+    }
+    
+    
+    /* footer styling */
+    footer{ 
+        max-height: 5%;
+        background-color: #5C92BC;
+        padding-left: 3%;     
+        min-height: 3%;
+    }
+    
+    footer p{
+        margin: 0;
+        padding: 0;
+    }
 }
