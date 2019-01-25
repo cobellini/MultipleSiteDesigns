@@ -1,0 +1,37 @@
+@media (max-width:480px){
+    /* Header styling */
+    #container{     
+        margin-left: 0%;
+        margin-right: 0%;     
+        width: 100%;
+    }
+        
+    #header-text{
+        padding: 0px 10px;
+    }
+       
+    header #header-text h1{     
+        font-size: 1.5em;  
+        letter-spacing: 1px;
+        width: 100%;
+        padding: 0px 10px; 
+    }
+  
+    /* Left side styling(bullet list) */
+    #leftList{ 
+       width: 100%;
+       display:block;    
+    }
+
+    /* Right side styling (input form) */
+    #rightList{
+        width: 100%;
+        display:block;        
+    }
+   
+  
+  
+    #submitContainer{
+        width: 100%;      
+    }
+}
