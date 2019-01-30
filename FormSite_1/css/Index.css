@@ -48,7 +48,7 @@ header #header-text h1{
     text-align: center; 
     font-family: 'Raleway', sans-serif;
     color: #F9F9F9;
-    font-size: 2.188em;
+    font-size: 3em;
     line-height: 1.5em;
     border-bottom: 1px solid #F9F9F9;
     text-shadow: 0.5px 1px black;
@@ -99,14 +99,14 @@ header #readMore-image{
 
 #LeftMainTitle{
     text-align: center;
-    font-size: 2.3em;
+    font-size: 1.8em;
     border-bottom: 1px solid #F9F9F9;
     
 }
 
 .LeftPointTitles{
     font-family: 'Raleway', sans-serif;
-    font-size: 1.8em;
+    font-size: 1.5em;
     color: #F9F9F9;
     text-shadow: 0.5px 1px black;
     line-height: 1.5em;

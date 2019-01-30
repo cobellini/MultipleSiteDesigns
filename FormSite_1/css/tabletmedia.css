@@ -39,18 +39,18 @@
         /* Left side styling(bullet list) */
         #leftList{ 
            width: 100%;
-           display:block;    
+           display:block; 
+           padding-bottom: 2%;   
         }
     
         /* Right side styling (input form) */
         #rightList{
-            width: 100%;
-            display:block;        
+            width: 70%;
+            display:block;  
+            margin: auto;
+            padding-top: 4%;
         }
 
-        #registerForm{
-            
-        }
        
       
       
