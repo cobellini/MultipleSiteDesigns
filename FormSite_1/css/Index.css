@@ -77,6 +77,7 @@ header #readMore-image{
     white-space: nowrap;
     margin-left: 15%;
     margin-right: 15%;
+    
   
 }
 
@@ -86,7 +87,7 @@ header #readMore-image{
 }
 
 /* Left side styling(bullet list) */
-#leftList{ 
+#leftList{  
    width: 50%;
    display:inline-block;
    white-space: normal;
@@ -96,6 +97,8 @@ header #readMore-image{
    margin-top: 0;
    min-height: 100%;
    padding-top: 5%;
+   transform: translateX(-150%);
+   transition: 0.5s;
 }
 
 #LeftMainTitle{
@@ -145,7 +148,9 @@ header #readMore-image{
     vertical-align: top;
     padding: 10% 7% 10% 5%;
     position: relative;
-    
+    transform: translateX(-50%);
+    overflow: hidden;
+    transition: 0.5s;
 }
 
 #registerForm{

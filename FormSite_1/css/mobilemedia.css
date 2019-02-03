@@ -46,7 +46,9 @@ html, body{
     /* Right side styling (input form) */
     #rightList{
         width: 100%;
-        display:block;        
+        display:block;    
+        transform: translateY(100%);
+        transform: translateX(0%);    
     }
    
   
