@@ -1,26 +1,35 @@
-$(document).ready(function(){
-    
-  $(document).on('scroll', function(){
-      if($(this).scrollTop() >= ($('#mainContent').position().top) - 150){
+$(document).ready(function () {
 
-        
-        setBigPanelVisibility();
+  if (screen.width > 480) {
+
+    $(document).on('scroll', function () {
+      if ($(this).scrollTop() >= ($('#mainContent').position().top) - 150) {
+        leftScroll();
+        rightScroll();
       }
-  })
+    });
 
+  }
+  else {
+    $(document).on('scroll', function(){
+      if($(this).scrollTop() >= ($('#mainContent').position().top)- 150){
+        leftScroll();
+      }
 
+      if($(this).scrollTop() >= ($('#leftList').position().top) + 100){
+        rightScroll();
+      }
+    });
+  }
 })
 
 
-function setBigPanelVisibility(){
-
-    document.getElementById('leftList').style.transform = "translateX(0%)";
 
 
-    document.getElementById('rightList').style.transform = "translateX(0%)";
-    
-    
-    
-  
+function leftScroll(){
+  document.getElementById('leftList').style.transform = "translateX(0%)";
 }
 
+function rightScroll(){
+  document.getElementById('rightList').style.transform = "translateX(0%)";
+}

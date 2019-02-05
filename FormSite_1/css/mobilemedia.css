@@ -33,6 +33,7 @@ html, body{
         padding-top: 5%;
         margin-left: auto;
         margin-right: auto;
+        overflow-x: none;
     }
     
 
@@ -47,8 +48,8 @@ html, body{
     #rightList{
         width: 100%;
         display:block;    
-        transform: translateY(100%);
-        transform: translateX(0%);    
+       
+        transform: translateX(150%);    
     }
    
   
